@@ -1,0 +1,36 @@
+.form-add-user{
+  display: flex ;
+  flex-direction: column;
+  align-items:safe;
+  justify-content: space-between;
+}
+.form-add-user input{
+  margin: 3% 1%;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+}
+input[type="submit"]{
+  background-color:inherit;
+  cursor: pointer;
+  padding: 3% 0;
+  border: 2px solid black !important;
+  border-radius:4px;
+}
+input[disabled]{
+  cursor: not-allowed;
+  color: gray;
+  border:none !important;
+  background-color:rgba(128, 128, 128, 0.308);
+}
+.form-section{
+  display: flex;
+}
+.form-section input{
+  width: 50%;
+}
+.app-form-add-user{
+  width: 100%;
+}
+input.ng-touched.ng-invalid {border:solid red 2px;}
+input.ng-touched.ng-valid {border:solid green 2px;}

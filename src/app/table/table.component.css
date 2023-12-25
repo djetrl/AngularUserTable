@@ -1,0 +1,39 @@
+
+
+table{
+  width: 100%;
+  max-height:79vh;
+
+  padding: 0;
+}
+tr{
+  width: 100%;
+  max-height: 46px;
+}
+tr:nth-child(odd){
+  background-color: rgba(190, 196, 197, 0.605);
+}
+th,td{
+  padding:10px;
+}
+td input{
+  border:none;
+  background-color:inherit;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+}
+td button{
+  height: 100%;
+  width: 100%;
+  background:inherit;
+  border:none;
+  transition: color .2s linear;
+}
+td button:hover{
+  color: #2199e8;
+}
+.paginate {
+  display: flex;
+  justify-content: center;
+}
