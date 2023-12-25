@@ -1,0 +1,35 @@
+.container{
+  display: flex;
+  flex-direction: column-reverse;
+  width: 100%;
+  overflow: hidden;
+
+}
+.form-container{
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin: 2% 0 5% 0;
+
+}
+.form-table{
+  width: 100%;
+}
+.form-container-info{
+  width: 300px;
+  text-align:justify;
+  margin-left: 5%;
+}
+.form-container-info h2{
+  text-align: center;
+}
+@media screen and (max-width: 800px) {
+  .form-container{
+    flex-direction: column;
+  }
+  .form-container-info{
+    width: 100%;
+    text-align:center;
+    margin-left: 5%;
+  }
+}
