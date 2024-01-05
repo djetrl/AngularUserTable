@@ -6,7 +6,7 @@ import { Subject } from 'rxjs/internal/Subject';
   providedIn: 'root'
 })
 export class ApiRequestsService {
-  address ='https://crudcrud.com/api/e3321a89a94c44bb99792242550d0dc4';
+  address = window.localStorage.getItem('api') || '';
   public item$ = new Subject<object>();
   public changeItem(item:object){
     this.item$.next(item);

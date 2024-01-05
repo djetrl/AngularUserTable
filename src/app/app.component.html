@@ -4,8 +4,12 @@
   <div class="form-container">
     <app-form-add-user></app-form-add-user>
     <div class="form-container-info">
-        <h2>Таблица пользователей</h2>
-        <p>Данная таблица содержит данные пользователей для сайта.</p>
+        <h2>Внимание</h2>
+        <p>Если данный адресс api не активен, новый можно получить по <a href="https://crudcrud.com/">тут</a></p>
+        <form class="form-add-user" [formGroup]="apiSection" novalidate (ngSubmit)="submit(apiSection)">
+          <input type="text" placeholder="url address" formControlName="apiadress">
+          <input type="submit" [disabled]="apiSection.invalid" value="обновить">
+        </form>
     </div>
   </div>
 </div>
